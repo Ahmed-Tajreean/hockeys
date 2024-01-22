@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 
 <head>
     <meta charset="UTF-8">
@@ -39,8 +39,214 @@
     </style>
 </head>
 
-<body class="font-manrope">
+<body class="font-manrope lg:mx-32">
+    <header class="container mx-auto">
+        <nav class="mb-14 mt-10">
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 text-base shadow bg-base-100 rounded-box w-52">
+                            <li><a class="text-[#FF4240]">Home</a></li>
+                            <li><a>About</a></li>
+                            <li><a>Blog</a></li>
+                            <li><a>Contact</a></li>
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost normal-case text-xl lg:text-4xl">Hockey <span
+                            class="text-[#FF4240]">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex justify-center items-center">
+                    <ul class="menu menu-horizontal text-base px-1">
+                        <li><a class="text-[#FF4240]">Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Blog</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class=" gap-3">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <a class="btn btn-primry bg-[#FF4240] text-white">Get Ticket</a>
+                </div>
+            </div>
+        </nav>
+        <!-- banner -->
+        <section>
+            <div class="relative carousel w-full h-[550px]">
+                <div id="slide1" class="carousel-item relative w-full h-550px">
+                    <img src="Images/1.png" class="w-full rounded-2xl" />
+                    <div
+                        class="absolute flex justify-center gap-5 transform -translate-y-1/2 left-5 right-5 bottom-16  lg:bottom-12 lg:justify-start lg:gap-5">
+                        <a href="#slide4" class="btn btn-circle text-white bg-black">❮</a>
+                        <a href="#slide2" class="btn btn-circle text-white bg-black">❯</a>
+                    </div>
+                </div>
+                <div id="slide2" class="carousel-item relative w-full h-550px">
+                    <img src="Images/2.png" class="w-full rounded-2xl" />
+                    <div
+                        class="absolute flex justify-center gap-5 transform -translate-y-1/2 left-5 right-5 top-3/4  lg:bottom-12 lg:justify-start lg:gap-5">
+                        <a href="#slide1" class="btn btn-circle text-white bg-black">❮</a>
+                        <a href="#slide3" class="btn btn-circle text-white bg-black">❯</a>
+                    </div>
+                </div>
+                <div id="slide3" class="carousel-item relative w-full h-550px">
+                    <img src="Images/3.png" class="w-full rounded-2xl" />
+                    <div
+                        class="absolute flex justify-center gap-5 transform -translate-y-1/2 left-5 right-5 top-3/4  lg:bottom-12 lg:justify-start lg:gap-5">
+                        <a href="#slide2" class="btn btn-circle text-white bg-black">❮</a>
+                        <a href="#slide4" class="btn btn-circle text-white bg-black">❯</a>
+                    </div>
+                </div>
+                <div id="slide4" class="carousel-item relative w-full h-550px">
+                    <img src="Images/1.png" class="w-full rounded-2xl" />
+                    <div
+                        class="absolute flex sm:justify-between items-end transform translate-y-1/2 lg:left-12 lg:bottom-12 lg:gap-5">
+                        <a href="#slide3" class="btn btn-circle text-white bg-black">❮</a>
+                        <a href="#slide1" class="btn btn-circle text-white bg-black">❯</a>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="absolute lg:top-[530px] lg:right-52 max-w-[550px] bg-black rounded-2xl text-white text-left p-8">
+                <h3 class="text-2xl font-extrabold mb-4">
+                    Meet all the heroes from the field
+                </h3>
+                <p class="font-medium text-[#FFFFFF99]">
+                    Dit amet consectetur. Condimentum dignissim adipiscing aliquam
+                    turpis placerat dolor. Purus urna in sit nullam proin.
+                </p>
+            </div>
+        </section>
+    </header>
 
+    <main class="container mx-auto">
+        <!-- Professional Hockey Section -->
+        <section class="text-center my-72 lg:my-28">
+            <h2 class="text-5xl font-extrabold mb-5">Our Featured Products</h2>
+            <p class="lg:max-w-3xl mb-10 mx-auto">There are many variations of passages of Lorem Ipsum available,
+                but
+                the majority have suffered alteration in some form, by injected humour, or randomised words which
+                don't
+                look even slightly believable. </p>
+            <!-- featured tea card container -->
+            <div class="grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+                <!-- first card -->
+                <div class="card p-8 bg-white">
+                    <div class="flex justify-center items-center">
+                        <div class="radial-progress text-primary text-red-500" style="--value:87;" role="progressbar">
+                            <span class="text-black">87%</span>
+                        </div>
+                    </div>
+                    <div class="card-body justify-center">
+                        <h2 class="text-xl font-bold">Prayer Facility</h2>
+                        <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                    </div>
+                </div>
+                <!-- second card -->
+                <div class="card p-8 bg-white">
+                    <div class="flex justify-center items-center">
+                        <div class="radial-progress text-primary text-green-400" style="--value:95;" role="progressbar">
+                            <span class="text-black">95%</span>
+                        </div>
+                    </div>
+                    <div class="card-body justify-center">
+                        <h2 class="text-xl font-bold">Experienced Coach</h2>
+                        <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                    </div>
+                </div>
+                <!-- third card -->
+                <div class="card p-8 bg-white">
+                    <div class="flex justify-center items-center">
+                        <div class="radial-progress text-primary text-orange-400" style="--value:90;"
+                            role="progressbar">
+                            <span class="text-black">90%</span>
+                        </div>
+                    </div>
+                    <div class="card-body justify-center">
+                        <h2 class="text-xl font-bold">Senior Player</h2>
+                        <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                    </div>
+                </div>
+                <!-- fourth card -->
+                <div class="card p-8 bg-white">
+                    <div class="flex justify-center items-center">
+                        <div class="radial-progress text-primary text-blue-500" style="--value:80;" role="progressbar">
+                            <span class="text-black">80%</span>
+                        </div>
+                    </div>
+                    <div class="card-body justify-center">
+                        <h2 class="text-xl font-bold">Training Ground</h2>
+                        <p>Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Program Section -->
+        <section class="text-center my-72 lg:my-28">
+            <h2 class="text-5xl font-extrabold mb-5">Program Sections</h2>
+            <p class="lg:max-w-3xl mb-10 mx-auto">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis
+                placerat <br> dolor. Purus urna in sit nullam proin. </p>
+
+            <div class="grid gap-8 grid-cols-1 lg:grid-cols-2 lg:row-span-1">
+                <!-- First Top Pic -->
+                <div class="w-full h-full">
+                    <div class="hero rounded-2xl" style="background-image: url(Images/2.png);">
+                        <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="max-w-md p-6 text-left">
+                                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+                                    excepturi
+                                    exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                                <button class="btn btn-primary">Get Started</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Top Pic -->
+                <div class="w-full h-full">
+                    <div class="hero rounded-2xl" style="background-image: url(Images/2.png);">
+                        <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="max-w-md p-6 text-left">
+                                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+                                    excepturi
+                                    exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                                <button class="btn btn-primary">Get Started</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Pic -->
+            <div class="mt-10">
+                <div class="w-full lg:w-1170 lg:h-450">
+                    <div class="hero rounded-2xl" style="background-image: url(Images/2.png);">
+                        <div class="hero-overlay bg-opacity-60 rounded-2xl"></div>
+                        <div class="hero-content text-center text-neutral-content">
+                            <div class="max-w-md p-1 text-left">
+                                <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
+                                <p class="mb-5">Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
+                                    excepturi
+                                    exercitationem quasi. In deleniti eaque aut repudiandae et a id nisi.</p>
+                                <button class="btn btn-primary">Get Started</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
